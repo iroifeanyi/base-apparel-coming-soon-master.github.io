@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(234, 155, 241, 0.075) 0%,rgba(234, 155, 241, 0.13) 100%), url(./images/bg-pattern-desktop.svg);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-box{
+    width: 1000px;
+    display: flex;
+}
+.left-box{
+    width: 60%;
+}
+.mini-box{
+    padding: 40px 0px 0px 0px;
+}
+.first-box{
+    margin-bottom: 0px;
+}
+.body-text{
+    width: 70%;
+    margin-top: 50px;
+}
+.first-text{
+    color: hsl(0, 93%, 68%);
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.sec-text{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 15px;
+}
+.third-text{
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: hsl(0, 93%, 68%);
+    line-height: 25px;
+}
+.input-field{
+    padding: 15px 0px 15px 35px;
+    width: 63%;
+    border-radius: 30px;
+    border-color: hsl(0, 93%, 68%);
+    
+}
+::placeholder{
+    color: hsla(0, 93%, 68%, 0.247);
+}
+.arrow-icon{
+    background-color: hsl(0, 93%, 68%);
+    width: 20%;
+    padding: 13px 0px 13px 50px;
+    border-radius: 30px;
+    margin-left: 260px;
+    margin-top: -50px;
+    z-index: 4;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+.woman-photo{
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+}
+.girl-photo{
+    display: none;
+}
+.right-box{
+    width: 40%;
+}
+@media screen and (max-width: 800px){
+    .main-box{
+        width: 400px;
+        flex-direction: column-reverse;
+    }
+    body{
+        background-image: linear-gradient(to bottom, rgba(250, 249, 250, 0.986) 0%,rgba(245, 241, 245, 0.986) 100%), url(./images/bg-pattern-desktop.svg);
+    }
+    .right-box{
+        width: 400px;
+        overflow: hidden;
+    }
+    .woman-photo{
+        width: 40%;
+        min-width: 400px;
+        height: auto;
+        display: none;
+    }
+    .girl-photo{
+        width: 100%;
+        display: table;
+    }
+    .box{
+        height: 140vh;
+    }
+    .first-box{
+        margin-top: -380px;
+        z-index: 4;
+        position: relative;
+        margin-bottom: 380px;
+        padding: 0px 0px 0px 60px;
+    }
+    .body-text{
+        width: 85%;
+        text-align: center;
+        margin-left: 25px;
+    }
+    .left-box{
+        width: 100%;
+    }
+    .input-field{
+        width: 80%;
+        margin-left: 35px;
+    }
+    ::placeholder{
+        color: hsla(0, 93%, 68%, 0.404);
+    }
+    .arrow-icon{
+        background-color: hsl(0, 93%, 68%);
+        width: 20%;
+        margin-left: 290px;
+        z-index: 4;
+        position: relative;
+        padding: 13px 0px 13px 40px;
+    }
+}
